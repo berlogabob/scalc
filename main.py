@@ -1,8 +1,8 @@
-acid_list=[]
+IV_list=[]
 ###
 def acidls():
     summ = one_acid()
-    acid_list.append(summ)
+    IV_list.append(summ)
     #print(acid_list)
 def one_acid():
   C = float(12.0107) #атомная масса углерода
@@ -13,8 +13,8 @@ def one_acid():
   Wi = float(input("Каково содержание данной кислоты в сумме жирных кислот? (десятичную часть от целой отделять ТОЧКОЙ)  "))
   print("\n", "\n", "\n")
   Mi = float(C*n+H*2*(n-N)+O*2)
-  odna_kislota = (254 * N * Wi) / Mi
-  return(odna_kislota)
+  odno_IV = (254 * N * Wi) / Mi
+  return(odno_IV)
     ###
 def question():
     answer = input(" Добавить значения для жирной кислоты?  (да или нет)")
@@ -23,7 +23,7 @@ def question():
         question()
     elif answer == "нет" or answer == "Нет" or answer == "Н" or answer == "н" or answer == "НЕТ" or answer == "N" or answer == "No" or answer == "n" or answer == "no" or answer == "NO":
         print("Йодное число равно: ")
-        print(sum(acid_list))
+        print(sum(IV_list))
     else:
         print("\n \n введено некорректное значение")
         #print("\n")
