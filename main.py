@@ -30,7 +30,7 @@ def usinp():
     Wi = float(input("Каково содержание данной кислоты в сумме жирных кислот? (десятичную часть от целой отделять ТОЧКОЙ)  "))
     print("\n", "\n", "\n")
     global Mi
-    Mi = float(C*n+H*2*(n-N)+O*2)
+    Mi_acid = float(C*n+H*2*(n-N)+O*2)
 
 
 def one_IV(N, Wi,Mi):
