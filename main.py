@@ -1,6 +1,5 @@
 IV_sum_list = []
 SV_sum_list = []
-
 def qw():
     answer = input(" Добавить значения для жирной кислоты?  (да или нет)")
     if answer == "да" or answer == "Да" or answer == "д" or answer == "ДА" or answer == "Д" or answer == "Y" or answer == "y" or answer == "Yes" or answer == "yes" or answer == "YES":
@@ -55,4 +54,3 @@ def sum_SV():
 
 
 qw()
-#print(sum(IV_sum_list), sum(SV_sum_list))
