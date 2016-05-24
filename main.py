@@ -2,12 +2,12 @@ IV_sum_list = []
 SV_sum_list = []
 def qw():
     answer = input(" Добавить значения для жирной кислоты?  (да или нет)")
-    if answer == "да" or answer == "Да" or answer == "д" or answer == "ДА" or answer == "Д" or answer == "Y" or answer == "y" or answer == "Yes" or answer == "yes" or answer == "YES":
+    if answer == "да" or answer == "Да" or answer == "д" or answer == "ДА" or answer == "Д" or answer == "Y" or answer == "y" or answer == "Yes" or answer == "yes" or answer == "YES" or answer == "1":
         usinp()
         sum_IV()
         sum_SV()
         qw()
-    elif answer == "нет" or answer == "Нет" or answer == "Н" or answer == "н" or answer == "НЕТ" or answer == "N" or answer == "No" or answer== "n" or answer == "no" or answer == "NO":
+    elif answer == "нет" or answer == "Нет" or answer == "Н" or answer == "н" or answer == "НЕТ" or answer == "N" or answer == "No" or answer== "n" or answer == "no" or answer == "NO" or answer == "0" :
         #print("Йодное число равно: %f2 /n Степень омыления равна: %f2 ", sum(IV_sum_list), sum(SV_sum_list))
         print(sum(IV_sum_list), sum(SV_sum_list))
     else:
@@ -30,7 +30,7 @@ def usinp():
     Wi = float(input("Каково содержание данной кислоты в сумме жирных кислот? (десятичную часть от целой отделять ТОЧКОЙ)  "))
     print("\n", "\n", "\n")
     global Mi
-    Mi_acid = float(C*n+H*2*(n-N)+O*2)
+    Mi = float(C*n+H*2*(n-N)+O*2)
 
 
 def one_IV(N, Wi,Mi):
