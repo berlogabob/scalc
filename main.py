@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 IV_sum_list = []
 SV_sum_list = []
 def qw():
